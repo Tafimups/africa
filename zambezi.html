@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Zambezi Africa</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <Style>
+        body {
+            background-color: lightblue;
+        }
+        
+        div {
+            background-color: lightblue;
+        }
+        p {
+            background-color: azure;
+        }
+        .topdiv {background-image: url("images/dew.jpg");
+        background-repeat: repeat;
+        background-position: top;
+        background-attachment: scroll;
+        width: 100%;
+    display:block;
+    position:relative;
+    margin-top: 5px;
+    text-align: center;
+    
+        height: 60vh; /*adjust if needed*/
+            
+        }
+        .mybutton {
+            font-family: sans-serif;
+    background: rgba(160, 67, 5, 0.466);
+    color: rgb(246, 250, 250);
+    border: 2px solid rgba(185, 82, 56, 0.733);
+    cursor: pointer;
+    width:15%;
+    height: 70px;
+    font-size: 1.6em;
+    text-align: center;
+    opacity: 60%;
+        }
+    
+        
+
+
+    </Style>
+  </head>
+  <body><!--The body starts here and with a div 2 columns to carry the nav bar-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"><img src="images/logo.jpg" class="img-thumbnail" alt="zambezi river"></div><!--your logo will be here as a thumpnail-->
+            <div class="col-sm-8"><!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="navId">
+                <li class="nav-item">
+                    <a href="#tab1Id" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Destination</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#tab2Id">Botswana</a>
+                        <a class="dropdown-item" href="#tab3Id">Namibia</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#tab4Id">Zimbabwe</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#tab5Id" class="nav-link">Trips</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Pages</a>
+                </li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+                <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+                <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+                <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+                <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+            </div>
+            
+            <script>
+                $('#navId a').click(e => {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+            </script></div><!--Navigation bagr will be placed here-->
+
+        </div>
+    </div><!--The columns ends here -->
+    <!--we need a div for the heading and intro with  a bacckground image -->
+    <div class="container-fluid">
+        <div class="topdiv">
+            <p style="margin: 10px;"></p>
+            <h1 style="margin-top: 00px; color: beige; line-height: 3.6em; text-align: center; font-size: 3.5em;" >Africa Adventure Tours</h1>
+           <button class="mybutton">GET STARTED</button>
+            
+        </div> <!--The main picture ends here but just below place another nav bar with search-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3" style="background-color:lightblue;"></div>
+                <div class="col-sm-6" style="background-color:lightblue ;"><nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Destination <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trip Types</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Activities</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Safari</a>
+                                    <a class="dropdown-item" href="#">Boat Cruise</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav></div>
+                <div class="col-sm-3" style="background-color:lightblue;"></div>
+              </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+
+    </style>
+  </body>
+</html>
