@@ -1,0 +1,58 @@
+.cutout-text-container {
+    background-image: url(images/Karoo\ desert.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aliceblue;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cutout-text {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+        padding: 100px 200px 50px;
+        line-height: 1.5em;
+    } 
+    .zoom {
+        padding: 50px;
+        background-image: url(images/elis.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform ,2s;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .zoom:hover{
+        transform: scale(1.2);
+    }
+    .feature {
+        padding: 50px;
+        background-image: url(images/Barra\ Resort.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform ,2s;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;  
+    }
+    .feature:hover{
+        transform: scale(1.2);
+    }
+    .section {
+        padding: 50px;
+        background-image: url(images/des.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform ,2s;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .section:hover{
+        transform: scale(1.2);
+    }
