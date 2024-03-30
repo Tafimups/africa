@@ -17,42 +17,35 @@
         padding: 100px 200px 50px;
         line-height: 1.5em;
     } 
-    .zoom {
-        padding: 50px;
-        background-image: url(images/elis.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: transform ,2s;
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
-    .zoom:hover{
-        transform: scale(1.2);
+
+    .image-container {
+        position: relative;
     }
-    .feature {
-        padding: 50px;
-        background-image: url(images/Barra\ Resort.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: transform ,2s;
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;  
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.2s;
     }
-    .feature:hover{
-        transform: scale(1.2);
+
+    .image-container:hover img {
+        transform: scale(1.5);
     }
-    .section {
-        padding: 50px;
-        background-image: url(images/des.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: transform ,2s;
-        width: 300px;
-        height: 300px;
-        margin: 0 auto;
-    }
-    .section:hover{
-        transform: scale(1.2);
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px;
+        font-size: 12px;
+        text-align: center;
     }
